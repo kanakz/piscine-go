@@ -1,7 +1,6 @@
 package piscine
 
-import (
-)
+import ()
 
 func StrRev(s string) string {
 
