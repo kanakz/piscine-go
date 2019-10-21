@@ -1,12 +1,12 @@
 package piscine
 
-import "fmt"
+import "github.com/01-edu/z01"
 
-func IterativeFactorial(n uint) uint {
+func z01.IterativeFactorial(n uint) uint {
 
 	if n == 0 {
 		return 1
 	}
-	return n * IterativeFactorial(n-1)
+	return n * z01.IterativeFactorial(n-1)
 
 }
