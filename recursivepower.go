@@ -1,15 +1,14 @@
 package piscine
 
-func IterativePower(nb, power int) int {
+func RecursivePower(nb, power int) int {
+	res := nb
 	if power == 0 {
 		return 1
-	} else if power < 0 {
+	} else if power == 1 {
+		return nb
+	} else if power < 0 || nb == 0 {
 		return 0
 	} else {
-		res := 1
-		for i := 1; i <= power; i++ {
-			res *= nb
-		}
-		return res
+		return res * RecursivePower(res, power-1)
 	}
 }
