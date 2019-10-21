@@ -1,4 +1,4 @@
-ackage piscine
+package piscine
 
 func IterativePower(nb, power int) int {
 	if power == 0 {
