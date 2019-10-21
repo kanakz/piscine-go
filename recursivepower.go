@@ -1,13 +1,15 @@
 package piscine
 
-func RecursiveFactorial(nb int) int {
-	if nb < -20 || nb > 20 {
-		return 0
-	} else if nb == 1 || nb == 0 {
+func IterativePower(nb, power int) int {
+	if power == 0 {
 		return 1
-	} else if nb < 0 {
+	} else if power < 0 {
 		return 0
 	} else {
-		return nb * RecursiveFactorial(nb-1)
+		res := 1
+		for i := 1; i <= power; i++ {
+			res *= nb
+		}
+		return res
 	}
 }
