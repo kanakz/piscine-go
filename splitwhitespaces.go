@@ -1,4 +1,5 @@
 package piscine
+
 func SplitWhiteSpaces(str string) []string {
 	k := 0
 	no_white_spaces := false
